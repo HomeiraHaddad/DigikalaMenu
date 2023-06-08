@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigikalaMenu</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/4e265b2369.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Moon Dance|Sofia|Princess Sofia|Trinton
+        &effect=fire|neon|emboss|outline|shadow-multiple|fire-animation" />
+    <script src="jquery-3.6.4.min-compressed.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="images/Digikala-logo.png" />
+            <div class="search-section">
+                <form class="form-s">
+                    <input type="search" placeholder="جستجو ..." class="search"/><i class="fas fa-magnifying-glass" id="icon"></i>
+                </form>
+            </div>
+            <button class="login-btn"><a href="#">ورود | ثبت نام <i class="fas fa-sign-in"></i></a></button>
+        </div>
+        <div class="header-bottom">
+            <div id="open-menu"><i class="fas fa-bars"></i></div>
+            <div class="low-opacity-menu"></div>
+            <div class="categories-menu-mobile">
+                <div class="menu-logo"> <a href="#"><img src="images/logo-fa.jpg" /></a></div>
+                <div class="menu-list">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-basket-shopping"></i> سوپر مارکت</a></li>
+                        <li class="font-effect-fire-animation"><a href="#"><i class="fas fa-fire"></i> پرفروش ترین ها</a></li>
+                        <li><a href="#"><i class="fas fa-ticket"></i> تخفیف ها و پیشنهادها</a></li>
+                        <li><a href="#"><i class="fas fa-percent"></i> شگفت انگیزها</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i>سؤالی دارید؟</a></li>
+                        <li><a href="#"><i class="fas fa-store"></i>در دیجی کالا بفروشید</a></li>
+                    </ul>
+                </div>
+                <div class="categories-m">
+                    <h4>دسته بندی کالاها</h4>
+                    <ul class="categories-list">
+                        <li id="ctl1"><a href="#">موبایل</a><i class="fas fa-angle-down"></i></li>
+                        <ul class="ul-mobile-list">
+                            <li class="mobile-list brands"><a href="#">برند</a><i class="fas fa-angle-down" style="font-size:0.6rem ;"></i></li>
+                            <ul id="brand">
+                                <li><a href="#">اپل</a></li>
+                                <li><a href="#">سامسونگ</a></li>
+                                <li><a href="#">نوکیا</a></li>
+                                <li><a href="#">شیائومی</a></li>
+                                <li><a href="#">هواوی</a></li>
+                                <li><a href="#">آنر</a></li>
+                                <li><a href="#">موتورولا</a></li>
+                                <li><a href="#">جی پلاس</a></li>
+                                <li><a href="#">وان پلاس</a></li>
+                                <li><a href="#">بلو</a></li>
+                                <li><a href="#">کاترپیلار</a></li>
+                                <li><a href="#">ویوو</a></li>
+                            </ul>
+                            
+                            <li class="mobile-list costs"><a href="#">قیمت</a><i class="fas fa-angle-down" style="font-size:0.6rem ;"></i></li>
+                            <ul id="cost">
+                                <li><a href="#">تا 2 میلیون تومان</a></li>
+                                <li><a href="#">تا 5 میلیون تومان</a></li>
+                                <li><a href="#">تا 7 میلیون تومان</a></li>
+                                <li><a href="#">تا 15 میلیون تومان</a></li>
+                                <li><a href="#">بالای 15 میلیون تومان</a></li>
+                            </ul>   
+                            
+                            <li class="mobile-list memories"><a href="#">حافظه داخلی</a><i class="fas fa-angle-down" style="font-size:0.6rem ;"></i></li>
+                            <ul id="memory">
+                                <li><a href="#">8 گیگابایت</a></li>
+                                <li><a href="#">16 گیگابایت</a></li>
+                                <li><a href="#">32 گیگابایت</a></li>
+                                <li><a href="#">64 گیگابایت</a></li>
+                                <li><a href="#">128 گیگابایت</a></li>
+                                <li><a href="#">256 گیگابایت</a></li>
+                                <li><a href="#">1 ترابایت</a></li>
+                            </ul>
+                            
+                            <li class="mobile-list pixs"><a href="#">رزولوشن عکس</a><i class="fas fa-angle-down" style="font-size:0.6rem ;"></i></li>
+                            <ul id="pix">
+                                <li><a href="#">13 مگاپیکسل</a></li>
+                                <li><a href="#">16 مگاپیکسل</a></li>
+                                <li><a href="#">48 مگاپیکسل</a></li>
+                                <li><a href="#">64 مگاپیکسل</a></li>
+                                <li><a href="#">108 مگاپیکسل</a></li>
+                                
+                            </ul>
+                            
+                            <li class="mobile-list uses"><a href="#">کاربری</a><i class="fas fa-angle-down" style="font-size:0.6rem ;"></i></li>
+                            <ul id="use">
+                                <li><a href="#">اقتصادی</a></li>
+                                <li><a href="#">میان رده</a></li>
+                                <li><a href="#">دانش آموزشی</a></li>
+                                <li><a href="#">گیمینگ</a></li>
+                                <li><a href="#">پرچمدار</a></li>
+                                <li><a href="#">ضدآب</a></li>
+                                <li><a href="#">مناسب عکاسی</a></li>
+                                <li><a href="#">5G</a></li>
+                                <li><a href="#">دو سیم کارت</a></li>
+                                <li><a href="#">Android (اندروید)</a></li>
+                                <li><a href="#">IOS</a></li>
+                                <li><a href="#">سایر سیستم عامل ها</a></li>
+                                
+                            </ul>
+                            
+                        </ul>  
+                        <li><a href="#">کالای دیجیتال</a><i class="fas fa-angle-down"></i></li>
+                        <li><a href="#">خانه و آشپزخانه</a><i class="fas fa-angle-down"></i></li>
+                        <li><a href="#">مد و پوشاک</a><i class="fas fa-angle-down"></i></li>
+                        <li><a href="#">کالاهای سوپر مارکتی</a><i class="fas fa-angle-down"></i></li>
+                        <li><a href="#">کتاب، لوازم تحریر و هنر</a><i class="fas fa-angle-down"></i></li>
+                        <li><a href="#">اسباب بازی، کودک و نوزاد</a><i class="fas fa-angle-down"></i></li>
+                        <li><a href="#">زیبایی و سلامت</a><i class="fas fa-angle-down"></i></li>
+                        <li><a href="#">ورزش و سفر</a><i class="fas fa-angle-down"></i></li>
+                        <li><a href="#">ابزار، لوازم ساختمانی و صنعتی</a><i class="fas fa-angle-down"></i></li>
+                        <li><a href="#">خودرو و موتور سیکلت</a><i class="fas fa-angle-down"></i></li>
+                        <li><a href="#">محصولات بومی و محلی</a><i class="fas fa-angle-down"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="categories">
+                <li onmouseover="showMenu()" onmouseout="hideMenu()"><a href="#"><i class="fas fa-bars"></i> دسته بندی کالاها</a>
+                    <div id="drop-down" onmouseover="showMenu()" onmouseout="hideMenu()">
+                        <div id="dd-right">
+                            <ul class="sub-menu">
+                                <li class="sub-title mobile"><i class="fas fa-mobile"></i><a href="#">موبایل</a></li>
+                                <li class="sub-title"><i class="fas fa-laptop"></i><a href="#" class="sub-title">کالای دیجیتال</a></li>
+                                <li class="sub-title"><i class="fas fa-spoon"></i><a href="#" class="sub-title">خانه و آشپزخانه</a></li>
+                                <li class="sub-title"><i class="fas fa-shirt"></i><a href="#" class="sub-title">مد و پوشاک</a></li>
+                                <li class="sub-title"><i class="fas fa-shop"></i><a href="#" class="sub-title">کالاهای سوپر مارکتی</a></li>
+                                <li class="sub-title"><i class="fas fa-book"></i><a href="#" class="sub-title">کتاب، لوازم تحریر و هنر</a></li>
+                                <li class="sub-title"><i class="fas fa-baby-carriage"></i><a href="#" class="sub-title">اسباب بازی، کودک و نوزاد</a></li>
+                                <li class="sub-title"><i class="fas fa-heart-pulse"></i><a href="#" class="sub-title">زیبایی و سلامت</a></li>
+                                <li class="sub-title"><i class="fas fa-football"></i><a href="#" class="sub-title">ورزش و سفر</a></li>
+                                <li class="sub-title"><i class="fas fa-hammer"></i><a href="#" class="sub-title">ابزار، لوازم ساختمانی و صنعتی</a></li>
+                                <li class="sub-title"><i class="fas fa-car"></i><a href="#" class="sub-title">خودرو و موتور سیکلت</a></li>
+                                <li class="sub-title"><i class="fas fa-fan"></i><a href="#" class="sub-title">محصولات بومی و محلی</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div id="dd-left">
+                            <ul class="sub-mobile">
+                                <li><a href="#">برند</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i>
+                                    <ul class="sub-item brands">
+                                        <li><a href="#">اپل</a></li>
+                                        <li><a href="#">سامسونگ</a></li>
+                                        <li><a href="#">نوکیا</a></li>
+                                        <li><a href="#">شیائومی</a></li>
+                                        <li><a href="#">هواوی</a></li>
+                                        <li><a href="#">آنر</a></li>
+                                        <li><a href="#">موتورولا</a></li>
+                                        <li><a href="#">جی پلاس</a></li>
+                                        <li><a href="#">وان پلاس</a></li>
+                                        <li><a href="#">بلو</a></li>
+                                        <li><a href="#">کاترپیلار</a></li>
+                                        <li><a href="#">ویوو</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">قیمت</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i>
+                                    <ul class="sub-item">
+                                        <li><a href="#">تا 2 میلیون تومان</a></li>
+                                        <li><a href="#">تا 5 میلیون تومان</a></li>
+                                        <li><a href="#">تا 7 میلیون تومان</a></li>
+                                        <li><a href="#">تا 15 میلیون تومان</a></li>
+                                        <li><a href="#">بالای 15 میلیون تومان</a></li>
+                                    </ul>   
+                                </li>
+                                <li><a href="#">حافظه داخلی</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i>
+                                    <ul class="sub-item">
+                                        <li><a href="#">8 گیگابایت</a></li>
+                                        <li><a href="#">16 گیگابایت</a></li>
+                                        <li><a href="#">32 گیگابایت</a></li>
+                                        <li><a href="#">64 گیگابایت</a></li>
+                                        <li><a href="#">128 گیگابایت</a></li>
+                                        <li><a href="#">256 گیگابایت</a></li>
+                                        <li><a href="#">1 ترابایت</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">رزولوشن عکس</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i>
+                                    <ul class="sub-item">
+                                        <li><a href="#">13 مگاپیکسل</a></li>
+                                        <li><a href="#">16 مگاپیکسل</a></li>
+                                        <li><a href="#">48 مگاپیکسل</a></li>
+                                        <li><a href="#">64 مگاپیکسل</a></li>
+                                        <li><a href="#">108 مگاپیکسل</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li><a href="#">کاربری</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i>
+                                    <ul class="sub-item">
+                                        <li><a href="#">اقتصادی</a></li>
+                                        <li><a href="#">میان رده</a></li>
+                                        <li><a href="#">دانش آموزشی</a></li>
+                                        <li><a href="#">گیمینگ</a></li>
+                                        <li><a href="#">پرچمدار</a></li>
+                                        <li><a href="#">ضدآب</a></li>
+                                        <li><a href="#">مناسب عکاسی</a></li>
+                                        <li><a href="#">5G</a></li>
+                                        <li><a href="#">دو سیم کارت</a></li>
+                                        <li><a href="#">Android (اندروید)</a></li>
+                                        <li><a href="#">IOS</a></li>
+                                        <li><a href="#">سایر سیستم عامل ها</a></li>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-basket-shopping"></i> سوپر مارکت</a></li>
+                <li class="font-effect-fire-animation"><a href="#"><i class="fas fa-fire"></i> پرفروش ترین ها</a></li>
+                <li><a href="#"><i class="fas fa-ticket"></i> تخفیف ها و پیشنهادها</a></li>
+                <li><a href="#"><i class="fas fa-percent"></i> شگفت انگیزها</a></li>
+            </ul>
+            <div id="location"><i class="fas fa-location-dot"></i><p>لطفا شهر خود را انتخاب کنید</p></div>
+            <div id="cnt-location"></div>
+            <div class="city">
+                <div id="city-sec1">
+                    <h4>انتخاب شهر</h4>
+                    <span id="close-city"><i class="fas fa-times"></i></span>
+                </div>
+                <div id="city-sec2">
+                    <p><i class="fas fa-crosshairs"></i> مکان یابی خودکار</p>
+                    <ul>
+                        <li><a href="#">آذربایجان شرقی</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">آذربایجان غربی</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">اردبیل</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">اصفهان</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">البرز</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">ایلام</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">بوشهر</a><i class="fas angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">تهران</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">چهارمحال و بختیاری</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">خراسان جنوبی</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">خراسان رضوی</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">خراسان شمالی</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">خوزستان</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">زنجان</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">سمنان</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">سیستان و بلوچستان</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">فارس</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">قزوین</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">قم</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">کردستان</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">کرمان</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">کرمانشاه</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">کهگیلویه و بویراحمد</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">گلستان</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">گیلان</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">لرستان</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">مازندران</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">مرکزی</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">هرمزگان</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">همدان</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        <li><a href="#">یزد</a><i class="fas fa-angle-left" style="font-size:0.6rem ;"></i></li>
+                        
+                        
+                    </ul>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+        
+    </header>
+    
+    <script src="app.js"></script>
+</body>
+</html>
